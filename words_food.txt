@@ -1,0 +1,24 @@
+#include	words_food_fruit.txt			p:$		a:25 * x	c:Fruit			h:10	t:9 * x
+#include	words_food_vegetable.txt		p:$		a:25 * x	c:Vegetable		h:10	t:9 * x
+#include	words_food_bread.txt		p:$		a:25 * x	c:Bread		h:10	t:9 * x
+#include	words_food_drinks.txt		p:$		a:25 * x	c:Drink		h:10	t:9 * x
+#include	words_food_meat.txt		p:$		a:25 * x	c:Meat		h:10	t:9 * x
+bagel
+bread
+cereal
+cheese
+croissant
+egg
+fish
+ketchup
+mayonnaise
+noodles
+pancakes
+pasta
+peanuts
+rice
+roll
+salad
+sandwich
+shrimp
+toast

@@ -1,0 +1,36 @@
+#This is the top-level word list file. It can contain both words and include
+# other lists.
+# 
+# The format is ...
+#   [word] p:<prize> a:<amount> c:<category> h:<time between hints> t:<game timer>
+#   ... or ...
+#   #include [word list] p:<prize> a:<amount> c:<category> h:<time between hints> t:<game timer>
+# 
+#   Developer's Notes:
+#   - All tags in <> are optional. Though leaving them out can lead to boring games.
+#     For example, a game without a prize.
+#   - If you dont specify an amount, but you do specify a prize the amount it will 
+#     default to 1.
+#   - The prize, amount, category, game time, and hint time tags do not have to be 
+#     in that exact order. However the word or wordlist must be first. 
+#   
+#   Formatting
+#   - Tabs are used to seperate each tag. Use as many tabs as you wish.
+#   - Spaces are allowed in individual tags. Tabs are not. 
+#   - The "amount" and "game timer" and "time bewteen hints" tags allows an equation input. 
+#     You may use all four basic arithmetic operators (+ - / *), parenthesis, and spaces. 
+#     The variable "x" represents the number of letters in a word.
+
+#include	words_animal.txt			p:264	a:1			c:Animal				h:10	t:9 * x
+#include	words_body.txt				p:$		a:50 * x	c:Body					h:10	t:10 * x
+#include	words_food.txt				p:$		a:50 * x	c:Food					h:10	t:9 * x
+#include	words_dinosaur.txt			p:264 	a:1			c:Dinosaur				h:10	t:15 * x
+#include	words_colors.txt			p:$		a:50 * x	c:Colors				h:10	t:10 * x
+#include	words_countries.txt			p:$		a:50 * x	c:Countries				h:10	t:15 * x
+#include	words_dogs.txt				p:264	a:1			c:Dog Breed				h:10	t:15 * x
+#include	words_insects.txt			p:$		a:25 * x	c:Insect				h:10	t:10 * x
+#include	words_instruments.txt		p:$		a:100 * x	c:Musical Instrument	h:10	t:17 * x
+#include	words_jobs.txt				p:$		a:50 * x	c:Job					h:10	t:10 * x
+#include	words_mail.txt				p:$		a:50 * x	c:Mail Related			h:10	t:10 * x
+#include	words_olympicsports.txt		p:264	a:1			c:Olympic Sport			h:10	t:15 * x
+#include	words_parties.txt			p:$		a:50 * x	c:Parties				h:10	t:10 * x

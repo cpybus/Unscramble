@@ -1,0 +1,48 @@
+# If the phrase to e scrambled has spaces, it will scramble each word in the
+# phrase seperately.
+# Default: true
+# Example: "this is a phrase" -> "hits si a prhaes"
+scramble_words_separately: true
+
+# Maximum number of hints admins are allowed to give users
+# Default: -1 (meaning no maximum)
+max_hints: -1
+
+# Option to show the answer when a game ends without anyone correctly guessing
+# This also applies to when an admin cancels a game
+# Default: true
+display_answer_on_failed_games: true
+
+# Option to show what the prize is
+# Default: true
+display_prize: true
+
+# Automatically checks for updates
+# Default: true
+check_for_updates: true
+
+# Top-level word list file.
+# This file must be in Unscramble plugin folder.
+word_list: words.txt
+
+# ALL THE FOLLOWING APPLIES TO AUTOMATED GAMES
+# AUTOMATED GAMES WILL ONLY WORK IF THE "automated_games"
+# VALUE IS SET TO TRUE.
+
+# Automated games
+# Default: true
+automated_games: true
+
+# This value is used to offset the first game after server starts
+# After the first automated game, all others will use "between_unscramble_games"
+# default: 450
+initial_offset: 450
+
+# Delay (in seconds) between unscramble executions.
+# Note: Make sure this value is much larger than a possible game length of time.
+# Default: 15 minutes
+between_unscramble_games: 900
+
+# Minimum number of users required for unscramble execution.
+# Default: At least 2 users must be on server.
+min_number_users_unscramble: 5
