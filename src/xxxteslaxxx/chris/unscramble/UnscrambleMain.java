@@ -41,7 +41,7 @@ public class UnscrambleMain extends JavaPlugin
 		
 		if (!setupEssentials())
 		{
-			Vars.log.log(Level.SEVERE, "[WorldClaim] Essentials plugin not found!");
+			Vars.log.log(Level.SEVERE, "[Unscramble] Essentials plugin not found!");
 			getServer().getPluginManager().disablePlugin(this);
 			return;
 		}
@@ -56,6 +56,13 @@ public class UnscrambleMain extends JavaPlugin
 		}
 		
 		loadYamls();
+		
+		if(checkConfig() == false)
+		{
+			Vars.log.log(Level.SEVERE, "[Unscramble] Config file is not the most recent! Please delete it and restart server.");
+			getServer().getPluginManager().disablePlugin(this);
+			return;
+		}
 		
 		getServer().getPluginManager().registerEvents(new UnscrambleListener(), this);
 		
@@ -185,5 +192,13 @@ public class UnscrambleMain extends JavaPlugin
 			return false;
 		}
 		
+	}
+	
+	private boolean checkConfig()
+	{
+		if(Vars.config.contains("automated_games"))
+			return true;
+		
+		return false;
 	}
 }
