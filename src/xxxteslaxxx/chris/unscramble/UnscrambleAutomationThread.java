@@ -46,7 +46,7 @@ public class UnscrambleAutomationThread implements Runnable
 				
 				if (passedTime == Vars.between_unscramble_games)
 				{
-					if (Vars.plugin.getServer().getOnlinePlayers().length >= Vars.min_number_users_unscramble && Vars.session == null)
+					if (Vars.plugin.getServer().getOnlinePlayers().size() >= Vars.min_number_users_unscramble && Vars.session == null)
 					{
 						Vars.session = new UnscrambleGameSession(UnscrambleHelperMethods.getRandomWord());
 					}
